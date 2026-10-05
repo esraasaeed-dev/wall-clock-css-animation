@@ -10,7 +10,7 @@ A simple wall clock built with **HTML and CSS**, featuring animated clock hands 
 
 ## Live Demo
 
-[View Live Demo](...)
+[View Live Demo](https://esraasaeed-dev.github.io/wall-clock-css-animation/)
 
 ## Learning Context
 
