@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: cursive;
+  background-image: url(./image/wall_background.png);
+  background-repeat: no-repeat;
+
+}
+
+.box {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  background-color: #fafafa;
+  border: 3px solid rgba(217, 111, 122, 0.8);
+;
+  border-radius: 18px;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 2px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s;
+}
+.box:hover {
+  transform: translateY(-3px) scale(1.04);
+}
+
+.clock-bar-seconds {
+  width: 1.5px;
+  height: 40%;
+  border-radius: 3px;
+  background-color: #d96f7a;
+  transform: translateY(-50%);
+  transform-origin: bottom center;
+  animation: clock-bar-animation 60s infinite;
+  animation-timing-function: steps(60, start);
+  position: absolute;
+}
+
+.clock-bar-minutes {
+  width: 2px;
+  height: 30%;
+  border-radius: 3px;
+  background-color: #d96f7a;
+  transform: translateY(-50%);
+  transform-origin: bottom center;
+  animation: clock-bar-animation 3600s linear infinite;
+  position: absolute;
+}
+
+.clock-bar-hours {
+  width: 2px;
+  height: 23%;
+  border-radius: 3px;
+  background-color: #d96f7a;
+  transform: translateY(-50%);
+  transform-origin: bottom center;
+  animation: clock-bar-animation 43200s linear infinite;
+  position: absolute;
+}
+
+@keyframes clock-bar-animation {
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+.clock-circle {
+  position: absolute;
+  width: 14px;
+  aspect-ratio: 1 / 1;
+  background-color: #d96f7a;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.clock-title {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #6f6863;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.signature {
+  position: absolute;
+  top: 95%;
+  left:0;
+  margin-top: 12px;
+  padding-left: 15px;
+  color: #6f6863;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  animation: signature-anmation 3s ease-in-out infinite;
+}
+
+@keyframes signature-anmation {
+  50% {
+    transform: scale(1.3);
+    color: #fafafa;
+  }
+}
+
+.number {
+  color: #303030;
+  font-weight: 600;
+  font-size: 15px;
+}
+.dash {
+  color: #aaa6a4;
+  font-size: 13px;
+}
+
+.dash,
+.number {
+  position: absolute;
+}
+
+.dash1 {
+  transform: rotate(30deg) translateY(-162px);
+}
+.number1 {
+  transform: translate(70px, -120px);
+}
+
+.dash2 {
+  transform: rotate(60deg) translateY(-150px);
+}
+.number2 {
+  transform: translate(105px, -65px);
+}
+
+.dash3 {
+  transform: rotate(90deg) translateY(-128px);
+}
+.number3 {
+  transform: translate(105px, 1.5px);
+}
+
+.dash4 {
+  transform: rotate(120deg) translateY(-150px);
+}
+.number4 {
+  transform: translate(110px, 70px);
+}
+
+.dash5 {
+  transform: rotate(150deg) translateY(-140px);
+}
+.number5 {
+  transform: translate(60px, 100px);
+}
+
+.dash6 {
+  transform: rotate(180deg) translateY(-123px);
+}
+.number6 {
+  transform: translate(-2px, 100px);
+}
+
+.dash7 {
+  transform: rotate(210deg) translateY(-140px);
+}
+.number7 {
+  transform: translate(-60px, 100px);
+}
+
+.dash8 {
+  transform: rotate(240deg) translateY(-156px);
+}
+.number8 {
+  transform: translate(-115px, 70px);
+}
+
+.dash9 {
+  transform: rotate(270deg) translateY(-133px);
+}
+.number9 {
+  transform: translate(-115px, 0px);
+}
+
+.dash10 {
+  transform: rotate(300deg) translateY(-155px);
+}
+.number10 {
+  transform: translate(-115px, -70px);
+}
+
+.dash11 {
+  transform: rotate(330deg) translateY(-162px);
+}
+.number11 {
+  transform: translate(-70px, -120px);
+}
+
+.dash12 {
+  transform: rotate(360deg) translateY(-140px);
+}
+.number12 {
+  transform: translate(-5px, -115px);
+}
